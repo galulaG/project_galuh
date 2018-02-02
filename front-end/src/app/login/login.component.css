@@ -1,0 +1,66 @@
+* {
+    border-radius: 0px !important;
+}
+
+/* .container-head{
+    ?
+} */
+
+.header{
+    background-image: url("https://jusufdjokam.files.wordpress.com/2013/02/forest-light-900.jpg");
+    background-size: cover;
+}
+
+/* .container-head{
+    text-align: center;
+
+} */
+
+/* .head-name{
+    font-size: 5em;
+    font-weight: bold;
+    color: white;
+} */
+
+#myregister{
+    margin-top: 50px;
+    margin-bottom: 75px;     
+}
+
+/* #mylogin{
+    margin-bottom: 150px;     
+} */
+
+
+.title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.info{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.form-button{
+    background-color: rgb(253, 231, 170);        
+    border-radius: 0px;
+    width: 100%;
+    
+}
+
+.btn-lg{
+    /* background-color: rgb(240, 177, 100);         */
+    border-radius: 0px;
+    width: 100%;
+}
+
+
+footer {
+    padding: 20px;
+    background-color: black;
+    color: white;
+}

@@ -1,0 +1,132 @@
+<body>
+
+    <!-- Navbar -->
+    <div class="w3-top">
+            <div class="w3-bar w3-theme-d2 w3-left-align">
+             <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+             <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>HUNIAN</a>
+            </div>
+           
+             <!-- Navbar on small screens -->
+             <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+                <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>HUNIAN</a>
+             </div>
+           </div>
+    
+        <!-- HEADER -->
+        <header class="header">
+            <div class= "container-head"> 
+                <img src="/assets/img/3.png" class="profile-image img-responsive center-block" alt="">          
+            </div>
+        </header>  
+    
+        <div class="container-fluid">
+            <div class="row row-eq-height">
+    
+            <!-- REGISTER -->
+                <div class="col-md-6 col-md-offset-3 section" id="myregister">
+                    <div class="title">REGISTER</div>
+                    <div class="info">For an account</div>
+                    <div class="myregister-container">  
+                        <!-- ngForm, button type=submit, input name & ngModel -->
+                        <form #f="ngForm" (ngSubmit)="Register(f)" class="form-horizontal">
+                                <div class="form-group">
+                                  <div class="col-md-8 col-md-offset-2">
+                                        <input type="text" class="form-control" placeholder="User Name" name="username" ngModel>                                    
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                        <div class="col-md-8 col-md-offset-2">
+                                              <input type="text" class="form-control" placeholder="Email" name="email" ngModel>                                    
+                                          </div>
+                                      </div>
+                                <div class="form-group">
+                                  <div class="col-md-8 col-md-offset-2">
+                                        <input type="text" class="form-control" placeholder="Phone number" name="phoneNumber" ngModel>
+                                    </div>
+                                </div>
+                                <div class="form-group">                          
+                                  <div class="col-md-8 col-md-offset-2">
+                                        <input type="text" class="form-control" placeholder="Password" name="password" ngModel>
+                                    </div>
+                                </div>
+                                <!-- <div class="form-group">
+                                  <div class="col-md-8 col-md-offset-2">
+                                    <input type="password" class="form-control" id="inputPassword" placeholder="New Password" name="password" ngModel>
+                                  </div>
+                                </div> -->
+    
+                                <div class="form-group">
+                                  <div class="col-md-8 col-md-offset-2">
+                                        <button class="btn btn-default form-button col-md-12" type="submit"><b>Register</b></button>                                    
+                                    </div>
+                                    
+                                </div>    
+                        </form>
+    
+                    </div>
+    
+                    <div class="info col-md-12">OR</div>
+                    <div class="mylogin-container">
+                      
+                            <div class="form-group">
+                                <div class="col-md-8 col-md-offset-2">  
+                                        <!-- Button trigger modal -->
+                                        <button type="submit" class="btn btn-primary btn-lg col-md-12" data-toggle="modal" data-target="#myModal">
+                                            Login
+                                        </button> <br>                                                                        
+                                </div>
+                            </div>  
+                        
+                        
+                    </div>
+                    <div class="info col-md-12">If you already have an account</div>   
+                    
+                </div>
+                
+            </div>
+        </div>
+    
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">LOGIN</h4>
+                </div>
+
+                <form #l="ngForm" (ngSubmit)="Login(l)" class="form-horizontal">
+                <div class="modal-body">
+                  <!-- username :<input type="text"> -->
+                  <input type="text" class="form-control" placeholder="Email" name="email" ngModel>
+                  <br>
+                  <input type="password" class="form-control" id="inputPassword" placeholder="Password" name="password" ngModel> 
+                </div>
+                
+                <div class="modal-footer">
+                  <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+                  <button type="submit" class="btn btn-primary">Submit</button>
+
+                </div>
+              </form>
+
+              </div>
+            </div>
+        </div>
+    
+    
+        <!-- FOOTER -->
+        <!-- <footer>
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col-xs-12">
+                      <p>Copyright © Your Website 2017</p>
+                  </div>
+              </div>
+          </div>
+      </footer> -->
+    
+    
+    </body>
+    

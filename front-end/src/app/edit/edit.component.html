@@ -1,0 +1,85 @@
+    
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-theme-d2 w3-left-align">
+         <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+         <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>HUNIAN</a>
+         <!-- <img src="assets/img/3.png" class="profile-image img-responsive center-block" alt="">           -->
+         <a href="#listing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Listing</a>
+         <a href="#addlist" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Add List</a>
+         <!-- <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Price</a>
+         <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a> -->
+           <div class="w3-dropdown-hover w3-hide-small">
+           <button class="w3-button" title="Notifications">Dropdown <i class="fa fa-caret-down"></i></button>     
+           <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+             <a href="#" class="w3-bar-item w3-button">Link</a>
+             <a href="#" class="w3-bar-item w3-button">Link</a>
+             <a href="#" class="w3-bar-item w3-button">Link</a>
+           </div>
+         </div>
+         <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
+        </div>
+       
+         <!-- Navbar on small screens -->
+         <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+           <a href="#addlist" class="w3-bar-item w3-button">Add List</a>
+           <a href="#listing" class="w3-bar-item w3-button">Listing</a>
+           <!-- <a href="#pricing" class="w3-bar-item w3-button">Price</a>
+           <a href="#contact" class="w3-bar-item w3-button">Contact</a> -->
+           <a href="#" class="w3-bar-item w3-button">Search</a>
+         </div>
+       </div>
+       
+       <!-- Image Header -->
+       <div class="w3-display-container w3-animate-opacity">
+         <img src="https://jusufdjokam.files.wordpress.com/2013/02/forest-light-900.jpg"
+         alt="boat" style="width:100%;min-height:350px;max-height:600px;">
+       </div>
+
+
+
+
+      <!-- Title Container -->
+      <div class="w3-container w3-padding-64 w3-center" id="team">
+          <h2>EDIT LIST</h2>
+          <p>Edit your property listing</p>
+  
+          <!-- <h1>{{units.username}}</h1>
+          <h1>{{units.email}}</h1>
+          <h1>{{units.phoneNumber}}</h1> -->
+  
+      </div>
+      
+        
+    <!-- Contact Container -->
+    <div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+        
+            <div class="w3-col m6 col-md-8 col-md-offset-3">
+                
+              
+            <form #ed="ngForm" (ngSubmit)="EditList(ed)" class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
+              <div class="w3-section">      
+                <label>Harga</label>
+                <input class="w3-input" type="text" name="price" ngModel required>
+              </div>
+              <div class="w3-section">      
+                <label>Lokasi</label>
+                <input class="w3-input" type="text" name="address" ngModel required>
+              </div>
+              <div class="w3-section">      
+                <label>Luas Tanah</label>
+                <input class="w3-input" type="text" name="luasTanah" ngModel required>
+              </div>
+              <div class="w3-section">      
+                  <label>Luas Bangunan</label>
+                  <input class="w3-input" type="text" name="luasBangunan" ngModel required>
+              </div>
+              
+              <!-- <input class="w3-check" type="checkbox" checked name="Like">
+              <label>I Like it!</label> -->
+              
+              <button class="w3-button w3-right w3-theme" type="submit" >EDIT</button>
+            </form>
+            <!-- </div> -->
+          </div>
+        </div>
